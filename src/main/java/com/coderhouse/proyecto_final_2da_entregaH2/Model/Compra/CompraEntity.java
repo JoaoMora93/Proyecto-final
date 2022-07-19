@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -18,16 +19,20 @@ import javax.persistence.Table;
 @Table(name = "CLIENTE")
 public class CompraEntity {
 
-    @Column(name = "CLIENTEID")
+
+    @Column(name = "COMPRAID")
     @Id
+    private Integer compraId;
+
+    @Column(name = "CLIENTEID")
     private Integer clienteId;
 
-    @Column(name = "DNI")
-    private long dni;
+    @Column(name = "PRODUCTOID")
+    private Integer productoId;
 
-    @Column(name = "NOMBRE")
-    private String nombre;
+    @Column(name = "FECHA")
+    private Date fecha;
 
-    @Column(name = "APELLIDO")
-    private String apellido;
+    @Column(name = "TOTAL")
+    private Float total;
 }
