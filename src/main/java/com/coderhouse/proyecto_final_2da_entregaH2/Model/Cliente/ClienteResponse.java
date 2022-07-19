@@ -8,7 +8,7 @@ public class ClienteResponse {
 
     private Integer clienteId;
     private long dni;
-    private String nombre;
     private String apellido;
+    private String nombre;
 }
 

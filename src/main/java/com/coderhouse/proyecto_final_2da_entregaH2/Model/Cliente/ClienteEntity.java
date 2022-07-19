@@ -25,9 +25,9 @@ public class ClienteEntity {
     @Column(name = "DNI")
     private long dni;
 
-    @Column(name = "NOMBRE")
-    private String nombre;
-
     @Column(name = "APELLIDO")
     private String apellido;
+
+    @Column(name = "NOMBRE")
+    private String nombre;
 }
