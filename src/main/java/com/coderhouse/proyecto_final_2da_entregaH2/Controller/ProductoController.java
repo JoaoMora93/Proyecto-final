@@ -23,17 +23,17 @@ public class ProductoController {
         return ResponseEntity.ok(productoService.buscarTodos());
     }
 
-    @GetMapping("/producto{Id}")
+    @GetMapping("/{Id}")
     public ResponseEntity<ProductoResponse> buscarProductoPorId(@PathVariable Integer productoId) {
         return ResponseEntity.ok(productoService.buscarPorId(productoId));
     }
 
-    @PostMapping("/actualizarProducto")
+    @PostMapping("/actualizar")
     public ResponseEntity<ProductoResponse> actualizarCliente(@Valid @RequestBody ProductoRequest producto) throws ApiException {
         return ResponseEntity.ok(productoService.actualizar(producto));
     }
 
-    @PostMapping("/crearProducto")
+    @PostMapping("/crear")
     public ResponseEntity<ProductoResponse> crearProducto(@Valid @RequestBody ProductoRequest producto) throws ApiException {
         return ResponseEntity.ok(productoService.crear(producto));
     }

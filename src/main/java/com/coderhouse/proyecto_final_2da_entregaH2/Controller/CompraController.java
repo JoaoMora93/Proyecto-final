@@ -25,7 +25,7 @@ public class CompraController {
         return ResponseEntity.ok(compraService.buscarTodos());
     }
 
-    @GetMapping("/compra{Id}")
+    @GetMapping("/{Id}")
     public ResponseEntity<CompraResponse> buscarCompraPorId(@PathVariable Integer compraId) {
         return ResponseEntity.ok(compraService.buscarPorId(compraId));
     }
