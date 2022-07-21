@@ -3,8 +3,6 @@ package com.coderhouse.proyecto_final_2da_entregaH2.Model.Compra;
 import lombok.Data;
 import org.springframework.validation.annotation.Validated;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.Date;

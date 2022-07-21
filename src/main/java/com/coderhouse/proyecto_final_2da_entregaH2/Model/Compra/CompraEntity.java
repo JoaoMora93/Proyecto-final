@@ -16,7 +16,7 @@ import java.util.Date;
 @Builder
 @Data
 @Entity
-@Table(name = "CLIENTE")
+@Table(name = "COMPRA")
 public class CompraEntity {
 
 

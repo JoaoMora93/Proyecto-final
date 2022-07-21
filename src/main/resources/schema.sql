@@ -17,7 +17,7 @@ productoId INTEGER NOT NULL,
 codigo INTEGER NOT NULL,
 precio DECIMAL NOT NULL,
 cantitdadProducto INTEGER NOT NULL,
-descripcion VARCHAR(150) NOT NULL,
+descripcion VARCHAR(500) NOT NULL,
 PRIMARY KEY (productoId)
 );
 
@@ -29,8 +29,8 @@ cantidadCompra INTEGER NOT NULL,
 fecha DATETIME NOT NULL,
 total DECIMAL NOT NULL,
 PRIMARY KEY (compraId),
-FOREIGN KEY (clienteId) REFERENCES Cliente (clienteId),
-FOREIGN KEY (productoId) REFERENCES Producto (productoId)
+FOREIGN KEY (clienteId) REFERENCES CLIENTE (clienteId),
+FOREIGN KEY (productoId) REFERENCES PRODUCTO(productoId)
 );
 
 CREATE TABLE VENTA (
@@ -39,5 +39,6 @@ clienteId INTEGER NOT NULL,
 compraId INTEGER NOT NULL,
 totalVenta DECIMAL NOT NULL,
 PRIMARY KEY (ventaId),
-FOREIGN KEY (compraId) REFERENCES Compra (compraId)
+FOREIGN KEY (clienteId) REFERENCES CLIENTE (clienteId),
+FOREIGN KEY (compraId) REFERENCES COMPRA (compraId)
 );

@@ -23,7 +23,7 @@ public class VentaController {
         return ResponseEntity.ok(ventaService.buscarTodos());
     }
 
-    @GetMapping("/venta{Id}")
+    @GetMapping("/{Id}")
     public ResponseEntity<VentaResponse> buscarVentaPorId(@PathVariable Integer ventaId) {
         return ResponseEntity.ok(ventaService.buscarPorId(ventaId));
     }
