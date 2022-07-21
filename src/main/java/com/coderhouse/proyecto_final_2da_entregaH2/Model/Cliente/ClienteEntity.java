@@ -23,7 +23,7 @@ public class ClienteEntity {
     private Integer clienteId;
 
     @Column(name = "DNI")
-    private long dni;
+    private Long dni;
 
     @Column(name = "APELLIDO")
     private String apellido;
