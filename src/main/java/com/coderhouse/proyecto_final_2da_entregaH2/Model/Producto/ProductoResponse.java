@@ -1,8 +1,6 @@
 package com.coderhouse.proyecto_final_2da_entregaH2.Model.Producto;
 
-import lombok.Builder;
-import lombok.Data;
-
+import lombok.*;
 
 @Data
 @Builder
