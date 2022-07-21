@@ -23,7 +23,7 @@ public class ProductoController {
         return ResponseEntity.ok(productoService.buscarTodos());
     }
 
-    @GetMapping("/{Id}")
+    @GetMapping("/{productoId}")
     public ResponseEntity<ProductoResponse> buscarProductoPorId(@PathVariable Integer productoId) {
         return ResponseEntity.ok(productoService.buscarPorId(productoId));
     }

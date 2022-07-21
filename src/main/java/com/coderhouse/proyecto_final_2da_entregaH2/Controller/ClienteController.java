@@ -23,7 +23,7 @@ public class ClienteController {
         return ResponseEntity.ok(clienteService.buscarTodos());
     }
 
-    @GetMapping("/{Id}")
+    @GetMapping("/{clienteId}")
     public ResponseEntity<ClienteResponse> buscarClientePorId(@PathVariable Integer clienteId) {
         return ResponseEntity.ok(clienteService.buscarPorId(clienteId));
     }
