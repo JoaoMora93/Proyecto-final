@@ -18,6 +18,7 @@ public class ProductoBuilder {
                     .codigo(producto.getCodigo())
                     .precio(producto.getPrecio())
                     .cantidadProducto(producto.getCantidadProducto())
+                    .descripcion(producto.getDescripcion())
                     .build();
         }
         return null;
@@ -34,6 +35,7 @@ public class ProductoBuilder {
                     .codigo(producto.getCodigo())
                     .precio(producto.getPrecio())
                     .cantidadProducto(producto.getCantidadProducto())
+                    .descripcion(producto.getDescripcion())
                     .build();
         }
         return null;

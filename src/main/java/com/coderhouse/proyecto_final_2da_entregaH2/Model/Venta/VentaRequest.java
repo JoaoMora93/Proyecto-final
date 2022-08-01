@@ -3,7 +3,7 @@ package com.coderhouse.proyecto_final_2da_entregaH2.Model.Venta;
 import lombok.Data;
 import org.springframework.validation.annotation.Validated;
 
-import javax.validation.constraints.NotBlank;
+
 import javax.validation.constraints.NotNull;
 
 @Data
@@ -16,6 +16,6 @@ public class VentaRequest {
     private Integer clienteId;
     @NotNull(message = "El ID de compra es obligatorio")
     private Integer compraId;
-    @NotBlank(message = "El total de la Venta es obligatoria")
+    @NotNull(message = "El total de la Venta es obligatoria")
     private Float totalVenta;
 }
